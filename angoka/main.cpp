@@ -22,6 +22,8 @@ enum class hold {
 int main(int argc, char* argv[]) {
 	if (argc < 1) return -1;
 
+
+
 	int KEYMIN = 2;
 	int KEYMAX = 999;
 	int UCHARMAX = 255 * KEYMAX;
@@ -38,8 +40,11 @@ int main(int argc, char* argv[]) {
 	while (UCHARMAX /= 10)
 		++UCHARNOB;
 
+
 	bool isango = true;
 	unsigned char* bef = nullptr;
+
+
 	hold h = hold::no;
 	if (argc == 1) {
 		std::cout << R"(If you need assistance, please type "-help".)" << std::endl;
